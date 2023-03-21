@@ -49,4 +49,60 @@ main {
 #featured {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space
+    justify-content: space-around;
+    margin-top: 50px;
+    }
+    
+    .article {
+    flex-basis: calc(50% - 20px);
+    margin: 0 10px 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    }
+    
+    .article img {
+    max-width: 100%;
+    }
+    
+    .article h3 {
+    margin-top: 0;
+    }
+    
+    .article p {
+    margin: 10px 0;
+    }
+    
+    .article a {
+    display: block;
+    text-align: right;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    }
+    
+    footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    }
+    
+    footer p {
+    margin: 0;
+    }
+    
+    @media screen and (max-width: 768px) {
+    nav ul {
+    flex-direction: column;
+    align-items: center;
+    }
+    nav li {
+        margin: 10px 0;
+    }
+    
+    #featured .article {
+        flex-basis: 100%;
+    }
+    }
+    
